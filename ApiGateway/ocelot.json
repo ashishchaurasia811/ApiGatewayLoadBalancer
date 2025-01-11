@@ -9,8 +9,15 @@
         {
           "Host": "localhost",
           "Port": 7038
+        },
+        {
+          "Host": "localhost",
+          "Port": 7071
         }
       ],
+      "LoadBalancerOptions": {
+          "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRatelimiting": true,
