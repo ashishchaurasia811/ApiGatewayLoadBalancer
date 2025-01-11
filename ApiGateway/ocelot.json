@@ -10,7 +10,14 @@
           "Host": "localhost",
           "Port": 7038
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRatelimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 15,
+        "Limit":  4
+      }
     },
     {
       "UpstreamPathTemplate": "/gateway/order",
